@@ -22,7 +22,7 @@ class TB extends StatelessWidget {
     this.borderColor = Colors.transparent,
 
     this.padding = const EdgeInsets.symmetric(vertical: 16, horizontal: 20),
-    this.minWidthFraction = 0.95, // 40% of screen width by default
+    this.minWidthFraction = 0.9, // 40% of screen width by default
   });
 
   @override

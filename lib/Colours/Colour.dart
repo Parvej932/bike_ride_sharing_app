@@ -6,4 +6,6 @@ class MyColors {
   static const lightPurple = Color(0xFFA04CF4);
   static const purple = Color(0xFF584CF4);
   static const white = Color(0xFFFFFFFF);
+  static const textField = Color(0xFFF3F2FF);
+  static const iconColor = Color(0xFF888888);
 }

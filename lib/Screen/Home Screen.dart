@@ -66,25 +66,25 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: MyColors.white,
+      backgroundColor:  MyColors.white,
       appBar: AppBar(
-        title: Padding(padding: EdgeInsets.only(left: .0000000000000000000000001
+        title: const Padding(padding: EdgeInsets.only(left: .0000000000000000000000001
         ),
           child: CustomText(text: "Home", color: MyColors.white,)
         ),
         toolbarHeight: 44,
         titleSpacing: 0,
         centerTitle: false,
-        leading: Icon(Icons.menu,color: MyColors.white),
+        leading: const Icon(Icons.menu,color: MyColors.white),
         backgroundColor: MyColors.purple,
         actions: [
           IconButton(onPressed: (){},icon:Icon (Icons.search), color: MyColors.white,),
           Stack(children: [
             IconButton(onPressed: (){},icon:Icon (Icons.shopping_cart_outlined),color: MyColors.white,),
-            Positioned(
+           const Positioned(
               right: 9,top: 10,
               child:
-              CircleAvatar(
+             CircleAvatar(
                 radius: 6,
                 backgroundColor: Color(0xffFF4646),
                 child: CustomText(text: '3', color: MyColors.white,fontSize: 9,),
@@ -96,19 +96,19 @@ class _HomeScreenState extends State<HomeScreen> {
 
 
       ),
-     body: Padding(
+     body:  Padding(
        padding: const EdgeInsets.all(10.0),
        child: SingleChildScrollView(
          scrollDirection: Axis.vertical,
          child: Column(
            children: [
-             SizedBox(height: 10,),
-             Row(
+            const SizedBox(height: 10,),
+             const Row(
                mainAxisAlignment: MainAxisAlignment.spaceBetween,
              children: [
                CustomText(text: 'Nearby Users'),
                InkWell(
-                 child: Row(
+                 child:  Row(
                    children: [
                      CustomText(text: 'View all',color: MyColors.purple,fontSize: 14,fontWeight: FontWeight.w400,),
                      Icon(Icons.arrow_forward_ios,color: MyColors.purple,)
@@ -118,10 +118,10 @@ class _HomeScreenState extends State<HomeScreen> {
 
              ],
              ),
-             SizedBox(height: 15,),
+             const  SizedBox(height: 15,),
              SingleChildScrollView(
                scrollDirection: Axis.horizontal,
-               child: Row(
+               child: const Row(
                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                  children: [
                    SizedBox(width: 5,),
@@ -202,7 +202,7 @@ class _HomeScreenState extends State<HomeScreen> {
                    child: Row(
                      children: [
                        CustomText(text: 'View all',color: MyColors.purple,fontSize: 14,fontWeight: FontWeight.w400,),
-                       Icon(Icons.arrow_forward_ios,color: MyColors.purple,)
+                       const Icon(Icons.arrow_forward_ios,color: MyColors.purple,)
                      ],
                    ),
                  ),
